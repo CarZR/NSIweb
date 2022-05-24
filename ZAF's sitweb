@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <h1> Site internet de ZAF </h1>
+  <h2> Choses que vous trouverez dans ce site: </h2>
+  <ul> 
+    <li>Des informations</li>
+    <li>Des cours</li>
+    <li>Des fiches de révision</li>
+  </ul>
+  
+  <table>
+    <thead>
+      <tr>
+        <th> Propriétaire</th>
+        <th> Sources</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Carla</td>
+        <td>GitHub</td>
+      </tr>
+    </tbody>
+  </table>
+        
+</body>
+</html>
