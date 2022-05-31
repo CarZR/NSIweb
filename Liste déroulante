@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<form>
+  <select name="prénom" size="1">
+    <option>Paul
+    <option>Pierre
+  </select>
+</form>
+</body>
+</html>
