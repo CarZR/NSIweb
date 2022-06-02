@@ -35,7 +35,7 @@
   <fieldset>
     <legend><b> Qui êtes-vous ? </b></legend>
     <p></p>
-      <input type="name" name="name" value="taper votre prénom" /> 
+      <input type="name" id="nom" name="name" value="taper votre prénom" /> 
     <p></p>
     
     
@@ -82,7 +82,7 @@
   <div id="res"></div>
   
   <script>
-    var nom1 = document.getElementsById("nom");
+    var nom1 = document.getElementById("nom");
     let b1=document.querySelector('button');
     b1.addEventListener('click',function(){alert('Validation confirmée, merci '+nom1.value)})
   </script>
