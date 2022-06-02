@@ -6,7 +6,7 @@
   <title>JS Bin</title>
 </head>
 <body>
-  <h1> Site internet de ZAF </h1>
+<h1> Site internet de ZAF </h1>
   <h2> Choses que vous trouverez dans ce site: </h2>
   <ul> 
     <li>Des informations</li>
@@ -28,6 +28,48 @@
       </tr>
     </tbody>
   </table>
-        
+  
+  <h2> Vos informations personnelles... </h2>
+  
+  
+  <fieldset>
+    <legend><b> Qui êtes-vous ? </b></legend>
+    <p></p>
+      <input type="name" name="name" value="taper votre prénom" /> 
+    <p></p>
+    
+    
+     <legend> Selectionner votre age : </legend>
+  <form>
+    <select name="age" size="1">
+      <option>11-15
+      <option>16-17
+      <option>18 et +
+    </select>
+  </form>
+     <p></p>
+  
+
+    <legend>Selectionner votre établissement</legend>
+
+    <div>
+      <input type="checkbox" id="NDG" name="NDG"  value="Notre Dame Générale"  checked>
+      <label for="NDG">Notre-Dame Général</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="NDP" name="NDP">
+      <label for="NDP">Notre-Dame Pro</label>
+    </div>
+</fieldset>
+  <p></p>
+  
+  
+  <button> Valider </button>
+  
+  
+  <div id="res"></div>
+  
+  
 </body>
 </html>
