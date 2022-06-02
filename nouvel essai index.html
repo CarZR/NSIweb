@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<h1> Site internet de ZAF </h1>
+  <h2> Choses que vous trouverez dans ce site: </h2>
+  <ul> 
+    <li>Des informations</li>
+    <li>Des cours</li>
+    <li>Des fiches de révision</li>
+  </ul>
+  
+  <table>
+    <thead>
+      <tr>
+        <th> Propriétaire</th>
+        <th> Sources</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Carla</td>
+        <td>GitHub</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h2> Liste de courses </h2>
+  
+  
+  <fieldset>
+    <legend><b> Qui êtes-vous ? </b></legend>
+    <p></p>
+      <input type="name" id="nom" name="name" value="taper votre prénom" /> 
+    <p></p>
+    
+    
+     <legend> Selectionner votre budget : </legend>
+  <form>
+    <select name="budget" size="1">
+      <option>0-10
+      <option>11-50
+      <option>51 et +
+    </select>
+  </form>
+     <p></p>
+  
+
+    <legend>Fruits</legend>
+
+    <div>
+      <input type="checkbox" id="Abricot" name="fruit"  value="Abricot">
+      <label for="Abricot">Abricot</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="Banane" name="fruit"  value="Banane">
+      <label for="Banane">Banane</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="Poire" name="fruit"  value="Poire">
+      <label for="Poire">Poire</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="Pomme" name="fruit"  value="Pomme" >
+      <label for="Pomme">Pomme</label>
+    </div>
+
+  </fieldset>
+  <p></p>
+  
+  
+  <button id="b2"> Valider </button>
+  
+  
+  
+  <script>
+    const button1 = document.querySelector('button');
+    button1.addEventListener('click', (event) => {
+        let element = document.querySelectorAll('input[name="fruit"]:checked');
+        let liste_fruit = [];
+        element.forEach((checkbox) => {
+            liste_fruit.push(checkbox.value);
+        });
+    });    
+  </script>
+  
+ 
+  
+  
+  
+  <script>
+    var nom1 = document.getElementById("nom");
+    let b1=document.querySelector('button');
+    b1.addEventListener('click',function(){alert('Validation confirmée, merci '+nom1.value+' vous devez acheter '+liste_fruit)})
+  </script>
+  
+  
+  
+  
+</body>
+</html>
+
+
+
+
+
+<!-- https://www.javascripttutorial.net/javascript-dom/javascript-checkbox/  -->
+
+
+
+
+
+
