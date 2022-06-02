@@ -67,6 +67,10 @@
   
   <button> Valider </button>
   
+  <script>
+    let b1=document.querySelector('button');
+    b1.addEventListener('click',function(){alert('Validation confirmée')})
+  </script>
   
   <div id="res"></div>
   
