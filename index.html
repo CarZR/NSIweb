@@ -83,7 +83,9 @@
   
   <script>
     let b1=document.querySelector('button');
-    b1.addEventListener('click',function(){alert('Validation confirmée'+ element))})
+    var nom1 = document.getElementsById("nom")
+    
+    b1.addEventListener('click',function(){alert('Validation confirmée, merci '+nom1.value)})
   </script>
   
   
