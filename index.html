@@ -85,23 +85,18 @@ Security Insights NSIweb/index.html @CarZR CarZR Update index.html Latest commit
         var elt = document.getElementById("res");
         elt.innerHTML = "OK";
         console.log("AbricotChecked" + nom1.checked);
-        /*
-        var element = document.getElementById("fruit");
-        for (var i = 0; i < element.length; i++) {
-          if (element[i] == true) {
-            array.push(element[i]);
-          }
-        }
-        */
       }
 
       var nom1 = document.getElementById("Abricot");
       //  let b1 = document.querySelector("button");
       var b1 = document.getElementById("button");
       b1.addEventListener("click", funi);
+      
+      var nom2 = document.getElementById("nom");
+      let b2=document.querySelector('button');
+      b1.addEventListener('click',function(){alert('Validation confirmée, merci '+nom2.value)})
 
-      /* //element(i).innerHTML=element(i).innerHTML + <div id='' name=''> </div>;
-            } */
+
     </script>
     <div id="res"></div>
   </body>
