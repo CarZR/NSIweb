@@ -1,120 +1,117 @@
+Skip to content Search or jump to… Pull requests Issues Marketplace Explore
+@moueza CarZR / NSIweb Public Code Issues Pull requests Actions Projects Wiki
+Security Insights NSIweb/index.html @CarZR CarZR Update index.html Latest commit
+57ea528 5 days ago History 1 contributor 120 lines (88 sloc) 2.49 KB
+
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-</head>
-<body>
-<h1> Site internet de ZAF </h1>
-  <h2> Choses que vous trouverez dans ce site: </h2>
-  <ul> 
-    <li>Des informations</li>
-    <li>Des cours</li>
-    <li>Des fiches de révision</li>
-  </ul>
-  
-  <table>
-    <thead>
-      <tr>
-        <th> Propriétaire</th>
-        <th> Sources</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Carla</td>
-        <td>GitHub</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h2> Liste de courses </h2>
-  
-  
-  <fieldset>
-    <legend><b> Qui êtes-vous ? </b></legend>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+  </head>
+  <body>
+    <h1>Site internet de ZAF</h1>
+    <h2>Choses que vous trouverez dans ce site:</h2>
+    <ul>
+      <li>Des informations</li>
+      <li>Des cours</li>
+      <li>Des fiches de révision</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Propriétaire</th>
+          <th>Sources</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Carla</td>
+          <td>GitHub</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Liste de courses</h2>
+
+    <fieldset>
+      <legend><b> Qui êtes-vous ? </b></legend>
+      <p></p>
+      <input type="name" id="nom" name="name" value="taper votre prénom" />
+      <p></p>
+
+      <legend>Selectionner votre budget :</legend>
+      <form>
+        <select name="budget" size="1">
+          <option>0-10</option>
+          <option>11-50</option>
+          <option>51 et +</option>
+        </select>
+      </form>
+      <p></p>
+
+      <legend>Fruits</legend>
+
+      <div>
+        <input type="checkbox" id="Abricot" name="fruit" value="Abricot" />
+        <label for="Abricot">Abricot</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Banane" name="fruit" value="Banane" />
+        <label for="Banane">Banane</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Poire" name="fruit" value="Poire" />
+        <label for="Poire">Poire</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Pomme" name="fruit" value="Pomme" />
+        <label for="Pomme">Pomme</label>
+      </div>
+    </fieldset>
     <p></p>
-      <input type="name" id="nom" name="name" value="taper votre prénom" /> 
-    <p></p>
-    
-    
-     <legend> Selectionner votre budget : </legend>
-  <form>
-    <select name="budget" size="1">
-      <option>0-10
-      <option>11-50
-      <option>51 et +
-    </select>
-  </form>
-     <p></p>
-  
 
-    <legend>Fruits</legend>
+    <button id="button">Valider</button>
 
-    <div>
-      <input type="checkbox" id="Abricot" name="fruit"  value="Abricot">
-      <label for="Abricot">Abricot</label>
-    </div>
-    
-    <div>
-      <input type="checkbox" id="Banane" name="fruit"  value="Banane">
-      <label for="Banane">Banane</label>
-    </div>
-    
-    <div>
-      <input type="checkbox" id="Poire" name="fruit"  value="Poire">
-      <label for="Poire">Poire</label>
-    </div>
-    
-    <div>
-      <input type="checkbox" id="Pomme" name="fruit"  value="Pomme" >
-      <label for="Pomme">Pomme</label>
-    </div>
+    <div id="res"></div>
 
-  </fieldset>
-  <p></p>
-  
-  
-  <button> Valider </button>
-  
-  
-  <div id="res"></div>
-  
-  <script>
-    var nom1 = document.getElementById("nom");
-    let b1=document.querySelector('button');
-    b1.addEventListener('click',function(){alert('Validation confirmée, merci '+nom1.value)})
-  </script>
-  
-  
-  
-  <script>
- 
-    */ Ne fonctionne pas /*
-    var element = document.getElementsByName("fruit");
-for (var i=0; i<element.length; i++){
-   if (element[i]==true){
-     array.push(element[i])
-   }
-}
+    <script>
+      function funi() {
+        var elt = document.getElementById("res");
+        elt.innerHTML = "OK";
+        console.log("AbricotChecked" + nom1.checked);
+        /*
+        var element = document.getElementById("fruit");
+        for (var i = 0; i < element.length; i++) {
+          if (element[i] == true) {
+            array.push(element[i]);
+          }
+        }
+        */
+      }
 
+      var nom1 = document.getElementById("Abricot");
+      //  let b1 = document.querySelector("button");
+      var b1 = document.getElementById("button");
+      b1.addEventListener("click", funi);
 
-
-*/ //element(i).innerHTML=element(i).innerHTML + <div id='' name=''> </div>;
-} /*
-
-
-  </script>
-  
-  
-</body>
+      /* //element(i).innerHTML=element(i).innerHTML + <div id='' name=''> </div>;
+            } */
+    </script>
+    <div id="res"></div>
+  </body>
 </html>
 
 <!--
 https://www.toutjavascript.com/reference/ref-window.document.getelementsbyname.php
 https://www.zonecss.fr/cours-css-javascript/les-selecteurs-javascript.html#element-getelementsbytagname
 https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/push 
-
-https://openclassrooms.com/forum/sujet/object-htmlinputelement-object-htmlinputelement-->
-
+https://openclassrooms.com/forum/sujet/object-htmlinputelement-object-htmlinputelement
+© 2022 GitHub, Inc. Terms Privacy Security Status Docs Contact GitHub Pricing
+API Training Blog About Loading complete
+-->
