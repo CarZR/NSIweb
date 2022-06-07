@@ -76,6 +76,25 @@
   </script>
   
   
+  <!--
+  <script>
+    function funi() {
+      var elt = document.getElementById("res");
+      console.log("Notre Dame Général" + nom1.checked);
+    }
+    var nom1 = document.getElementById("NDG");
+    var ND1 = document.getElementById("button");
+    ND1.addEventListener("click", funi);    
+
+    var nom2 = document.getElementById("nom");
+    let b2=document.querySelector('button');
+    b2.addEventListener('click',function(){alert('Validation confirmée, merci '+nom2.value)})
+
+    
+  </script>  
+  
+  -->
+  
   
 </body>
 </html>
